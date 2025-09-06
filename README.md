@@ -47,7 +47,33 @@ To run these programs you need:
 | `fun_4mod_DK.m`                  | Function that computes the direct kinematics to validate the numerical results when four modules are connected. |
 | `results.m`                  | Function used to plot the reulst of kinematic and multibody models. |
 
+📂 Additional files
 
+The STEP files correspond to the solids geometry used to construct the multibody model of the robot. The included STEP files are:
+
+| STL file                 | Description                                                                 |
+|--------------------------------|----------------------------------------------------------------------------|
+| `Base_Conector_Hembra_Predeterminado_sldprt.STEP`           | Computes the direct and inverse kinematics of a single module.                  |
+| `Base_Conector_Macho_Predeterminado_sldprt.STEP`       | Computes the direct and inverse kinematics  when two modules are connected.  |
+| `Base_Motor_Predeterminado_sldprt.STEP`       | Computes the direct and inverse kinematics  when three modules are connected. |
+| `Base_Predeterminado_sldprt.STEP`       | Computes the direct and inverse kinematics  when four modules are connected.  |
+| `Base_Soporte_Motor_Predeterminado_sldprt.STEP`               | Function that computes the direct kinematics to validate the numerical results of single module simulation. |
+| `Bateria_Predeterminado_sldprt.STEP`                  | Function that computes the direct kinematics to validate the numerical results  when two modules are connected. |
+| `Bateria_soporte_Inf_1_Predeterminado_sldprt.STEP`                  | Function that computes the direct kinematics to validate the numerical results when three modules are connected.  |
+| `Bateria_soporte_Inf_2_Predeterminado_sldprt.STEP`                  | Function that computes the direct kinematics to validate the numerical results when four modules are connected. |
+| `Bateria_Soporte_Sup_Predeterminado_sldprt.STEP`                  | Function used to plot the reulst of kinematic and multibody models. |
+| `Cople_Predeterminado_sldprt.STEP`           | Computes the direct and inverse kinematics of a single module.                  |
+| `cubierta_superior_Predeterminado_sldprt.STEP`       | Computes the direct and inverse kinematics  when two modules are connected.  |
+| `ground_Predeterminado_sldprt.STEP`       | Computes the direct and inverse kinematics  when three modules are connected. |
+| `Mecanismo_Brazo_Predeterminado_sldprt.STEP`       | Computes the direct and inverse kinematics  when four modules are connected.  |
+| `Mecanismo_Cubierta_Servo_Predeterminado_sldprt.STEP`               | Function that computes the direct kinematics to validate the numerical results of single module simulation. |
+| `Mecanismo_Espaciador_Predeterminado_sldprt.STEP`                  | Function that computes the direct kinematics to validate the numerical results  when two modules are connected. |
+| `Mecanismo_Rptula_Predeterminado_sldprt.STEP`                  | Function that computes the direct kinematics to validate the numerical results when three modules are connected.  |
+| `Mecanismo_Rueda_Predeterminado_sldprt.STEP`                  | Function that computes the direct kinematics to validate the numerical results when four modules are connected. |
+| `Mecanismo_Servo_Predeterminado_sldprt.STEP`                  | Function used to plot the reulst of kinematic and multibody models. |
+| `RD_Tapa_2_Predeterminado_sldprt.STEP`                  | Function that computes the direct kinematics to validate the numerical results when three modules are connected.  |
+| `RI_tapa_2_Predeterminado_sldprt.STEP`                  | Function that computes the direct kinematics to validate the numerical results when four modules are connected. |
+| `Rodillo_Predeterminado_sldprt.STEP`                  | Function used to plot the reulst of kinematic and multibody models. |
 
 
 ## 📊 Results
