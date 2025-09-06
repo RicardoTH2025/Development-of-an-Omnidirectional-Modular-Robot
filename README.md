@@ -3,13 +3,11 @@
 # Development-of-an-Omnidirectional-Modular-Robot  
 ### Manuscript ID: 9672    
 </div>
-Fernando Lucio-Reyna¹, Ricardo Tapia-Herrera², Tonatiuh Hernández-Cortés³, Israel Lizardo-Parra⁴, Jesús A. Meda-Campaña<sup>superscript</sup>1  
+Fernando Lucio-Reyna<sup>1</sup>, Ricardo Tapia-Herrera<sup>2</sup>, Tonatiuh Hernández-Cortés<sup>3</sup>, Israel Lizardo-Parra<sup>1</sup>, Jesús A. Meda-Campaña<sup>1</sup>
   
-¹ SECIHTI-IPN, Ciudad de México, México  
-² Universidad Politécnica de Pachuca, Zempoala, México  
-³ Instituto Politécnico Nacional, SEPI ESIME Zacatenco, Ciudad de México, México  
-⁴ Instituto Politécnico Nacional, ESIME Zacatenco, Ciudad de México, México  
-
+¹ Instituto Politécnico Nacional, SEPI ESIME Zacatenco, Ciudad de México, México
+² SECIHTI-IPN, Ciudad de México, México  
+³ Universidad Politécnica de Pachuca, Zempoala, México
 ---
 
 ## 🛠 Requirements
