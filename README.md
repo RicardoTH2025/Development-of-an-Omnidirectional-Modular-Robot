@@ -13,36 +13,39 @@ Fernando Lucio-Reyna<sup>1</sup>, Ricardo Tapia-Herrera<sup>2</sup>, Tonatiuh He
 
 ## 🛠 Requirements
 
-To run the programs you need:
+To run these programs you need:
 
 - **MATLAB/Simulink R2024a** or later  
 - **Multibody Simulation Toolbox** (required to load the robot’s multibody model)
-- **Robotics Toolbox** (required to generate the linear interpolation in Case II)  
 
-> ⚠️ The Simulink files are linked to MATLAB functions that contain the parameters of the controller and plotting functions. We recommend downloading the **complete directory** to ensure all dependencies are included.
+> ⚠️ Simulink files are linked to MATLAB functions that contain the parameters of the kinematics and plotting functions. We recommend downloading the **complete directory** to ensure all dependencies are included.
 
 ---
 
 ## Included files
 📂 Main simulation files 
-| Simulink File           | Related Figure(s)         | Description                                                                 |
-|--------------------------|---------------------------|-----------------------------------------------------------------------------|
-| `HGO_robot_CASE_I.slx`   | Fig. 4, Fig. 5           | Executes the simulation for Case I: Tracking of a chaotic dynamical system  |
-| `HGO_robot_CASE_II.slx`  | Fig. 7, Fig. 8, Fig. 9, Fig. 10 | Executes the simulation for Case II: Tracking of a prescribed workspace trajectory |
-| `HGO_robot_CASE_III.slx` | Fig. 11, Fig. 12, Fig. 13, Fig. 14 | Executes the simulation for Case III: Tracking of a reference signal generated in real time |  
+| Simulink File           | Related Figure(s)    | Description                                                                 |
+|--------------------------|---------------------|-----------------------------------------------------------------------------|
+| `Multibody_front.slx`    | Fig. 7              | Executes the simulation for single module case.                             |
+| `Multibody_2modules.slx` | Fig. 8              | Executes the simulation when two modules are connected.                     |
+| `Multibody_3modules.slx` | Fig. 9              | Executes the simulation when three modules are connected.      |  
+| `Multibody_4modules.slx` | Fig. 10             | Executes the simulation when four modules are connected.       |  
+
 
 
 📂 Additional scripts
 
 | MATLAB Script                  | Description                                                                 |
-|--------------------------------|-----------------------------------------------------------------------------|
-| `HGO_parameters_Case_I.m`      | Computes the reference signal for the Lorenz attractor in the robot's workspace. Also calculates the inverse kinematics, stabilizer gains, HGO parameters, and solves Isidori's equations. |
-| `HGO_parameters_Case_II.m`     | Computes the reference signal for a trajectory with five linear segments. Also calculates the inverse kinematics, stabilizer gains, HGO parameters, and solves Isidori's equations. |
-| `HGO_parameters_Case_III.m`    | Computes the reference signal for real-time tracking. Also calculates inverse kinematics, stabilizer gains, HGO parameters, and solves Isidori's equations. |
-| `Lorenz_attractor_simulink.slx`| Required by `HGO_parameters_Case_I.m` to compute the states of the Lorenz attractor for reference tracking. |
-| `Lorenz_attractor_fnc.m`       | Contains the model of the Lorenz attractor and is used by the Simulink file `Lorenz_attractor_simulink.slx`. |
-| `results.m`                    | Generates the plots presented in the article. This script runs automatically once a main Simulink file completes the simulation. |  
-| `px_final.mat` and `py_final.mat`  | These files contain the adquired values in the robot's workspace (Px, Py) for Case III. They are automatically loaded when 'HGO_robot_CASE_III.slx is executed'|  
+|--------------------------------|----------------------------------------------------------------------------|
+| `kinematics_front.m`           | Computes the direct and inverse kinematics of a single module.                  |
+| `kinematics_2_modules.m`       | Computes the direct and inverse kinematics  when two modules are connected.  |
+| `kinematics_3_modules.m`       | Computes the direct and inverse kinematics  when three modules are connected. |
+| `kinematics_4_modules.m`       | Computes the direct and inverse kinematics  when four modules are connected.  |
+| `fun_frontal_DK.m`               | Function that computes the direct kinematics to validate the numerical results of single module simulation. |
+| `fun_2mod_DK.m`                  | Function that computes the direct kinematics to validate the numerical results  when two modules are connected. |
+| `fun_3mod_DK.m`                  | Function that computes the direct kinematics to validate the numerical results when three modules are connected.  |
+| `fun_4mod_DK.m`                  | Function that computes the direct kinematics to validate the numerical results when four modules are connected. |
+| `results.m`                  | Function used to plot the reulst of kinematic and multibody models. |
 
 
 
@@ -50,4 +53,4 @@ To run the programs you need:
 ## 📊 Results
 
 - Once the Simulink file finishes execution, the **plots of the results** will appear automatically.  
-- The figures correspond to the tracking performance and output regulation behavior discussed in the paper.  
+- The figures correspond to the behavior of robot in the proposed cases.  
