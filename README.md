@@ -54,7 +54,7 @@ To run these programs you need:
 
 ---
 
-### Additional geometry (STEP files)
+### Additional files
 
 These STEP files correspond to the 3D CAD geometries used to construct the multibody model of the robot:
 
