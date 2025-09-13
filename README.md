@@ -1,7 +1,7 @@
 <div align="center">
 
 # Development of an Omnidirectional Modular Robot  
-### Manuscript ID: 9672    
+### Manuscript ID: 9673    
 
 Fernando Lucio-Reyna<sup>1</sup>, Ricardo Tapia-Herrera<sup>2</sup>, Tonatiuh Hernández-Cortés<sup>3</sup>, Israel Lizardo-Parra<sup>1</sup>, Jesús A. Meda-Campaña<sup>1</sup>  
 
